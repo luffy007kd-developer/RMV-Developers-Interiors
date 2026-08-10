@@ -1,0 +1,40 @@
+body {
+      background: url('bactrd2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1500px;
+}
+img {
+    object-fit: cover;
+    width: 200px;
+    height: 180px;
+    box-shadow:0 5px 10px black;
+    border-radius: 0 0 15px 0;
+    
+}
+.one {
+    width: 70%;
+    background: transparent;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    padding-left: 5%;
+    padding-top:5% ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+      box-shadow:0 5px 10px black;
+      backdrop-filter: blur(2px);
+
+}
+h1 {
+    color: wheat;
+    font-size: 50px;
+    font-family: bold,italic;
+     font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    
+    font-family: bold,italic;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RMV Devolopers & Interiors</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <div class="two">
+        <h1>RMV</h1>
+      <p>Developers & Interiors</p>
+      </div>
+        <div class="head">
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="ten">
+                <li>Home</li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                  <li class="project-menu">
+  <span class="project-title">Projects</span>
+
+    <ul class="project-dropdown">
+        <li>Traditional</li>
+        <li>Modern</li>
+        <li>Luxury</li>
+    </ul>
+</li>
+                    </ul>
+                  </nav>
+                
+        <div class="three">
+           <ul class="six">
+            <li>Interior .</li>
+            <li>Architecture .</li>
+            <li>Designing</li>
+           </ul>
+        </div>
+        <div class="one">
+            <h2>" Elevate</h2>
+            <p>Your space</p>
+          <p>With</p>
+          <h3>class "</h3>
+        </div>
+      
+    
+<script>
+const menuButton=document.querySelector(".menu-toggle");
+const navigation=document.querySelector(".ten");
+menuButton.addEventListener("click",()=>{const open=navigation.classList.toggle("menu-open");menuButton.classList.toggle("active",open);menuButton.setAttribute("aria-expanded",open);});
+navigation.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{navigation.classList.remove("menu-open");menuButton.classList.remove("active");menuButton.setAttribute("aria-expanded","false");}));
+</script>
+</body>
+</html>
